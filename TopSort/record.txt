@@ -1,0 +1,130 @@
+Microsoft Windows [版本 10.0.19045.4170]
+(c) Microsoft Corporation。保留所有权利。
+
+D28301Desktoppowershell
+Windows PowerShell
+版权所有 (C) Microsoft Corporation。保留所有权利。
+
+尝试新的跨平台 PowerShell httpsaka.mspscore6
+
+PS D28301Desktop Measure-Command { Start-Process -FilePath cmd_1.exe -RedirectStandardInput caizihuan_luorui.txt -RedirectStandardOutput output.txt -NoNewWindow -Wait }
+
+
+Days               0
+Hours              0
+Minutes            0
+Seconds            8
+Milliseconds       229
+Ticks              82294182
+TotalDays          9.52478958333333E-05
+TotalHours         0.0022859495
+TotalMinutes       0.13715697
+TotalSeconds       8.2294182
+TotalMilliseconds  8229.4182
+
+
+
+PS D28301Desktop g++ 1.cpp -o cmd_1 -std=c++11
+PS D28301Desktop Measure-Command { Start-Process -FilePath cmd_1.exe -RedirectStandardInput caizihuan_luorui.txt -RedirectStandardOutput output.txt -NoNewWindow -Wait }
+
+
+Days               0
+Hours              0
+Minutes            0
+Seconds            8
+Milliseconds       148
+Ticks              81486163
+TotalDays          9.43126886574074E-05
+TotalHours         0.00226350452777778
+TotalMinutes       0.135810271666667
+TotalSeconds       8.1486163
+TotalMilliseconds  8148.6163
+
+
+
+PS D28301Desktop g++ 1.cpp -o cmd_1 -std=c++11
+PS D28301Desktop Measure-Command { Start-Process -FilePath cmd_1.exe -RedirectStandardInput caizihuan_luorui.txt -RedirectStandardOutput output.txt -NoNewWindow -Wait }
+
+
+Days               0
+Hours              0
+Minutes            0
+Seconds            1
+Milliseconds       102
+Ticks              11025953
+TotalDays          1.27615196759259E-05
+TotalHours         0.000306276472222222
+TotalMinutes       0.0183765883333333
+TotalSeconds       1.1025953
+TotalMilliseconds  1102.5953
+
+
+
+PS D28301Desktop  Measure-Command { Start-Process -FilePath cmd_1.exe -RedirectStandardInput caizihuan_luorui.txt -RedirectStandardOutput output1.txt -NoNewWindow -Wait }
+
+
+Days               0
+Hours              0
+Minutes            0
+Seconds            2
+Milliseconds       101
+Ticks              21014745
+TotalDays          2.43226215277778E-05
+TotalHours         0.000583742916666667
+TotalMinutes       0.035024575
+TotalSeconds       2.1014745
+TotalMilliseconds  2101.4745
+
+
+
+PS D28301Desktop  g++ 2.cpp -o cmd_2 -std=c++11
+PS D28301Desktop  g++ 2.cpp -o cmd_2 -std=c++11
+PS D28301Desktop  Measure-Command { Start-Process -FilePath cmd_2.exe -RedirectStandardInput caizihuan_luorui.txt -RedirectStandardOutput output2.txt -NoNewWindow -Wait }
+
+
+Days               0
+Hours              0
+Minutes            0
+Seconds            1
+Milliseconds       104
+Ticks              11042243
+TotalDays          1.27803738425926E-05
+TotalHours         0.000306728972222222
+TotalMinutes       0.0184037383333333
+TotalSeconds       1.1042243
+TotalMilliseconds  1104.2243
+
+
+
+#提交版本地测试:1116milliseconds
+PS D:\28301\Desktop> g++ caizihuan_luorui.cpp -o cmd_2 -std=c++11
+PS D:\28301\Desktop> Measure-Command { Start-Process -FilePath "cmd_2.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "outp.txt" -NoNewWindow -Wait }
+
+
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 116
+Ticks             : 11163631
+TotalDays         : 1.2920869212963E-05
+TotalHours        : 0.000310100861111111
+TotalMinutes      : 0.0186060516666667
+TotalSeconds      : 1.1163631
+TotalMilliseconds : 1116.3631
+
+//去掉数组增加结构体版本
+g++ TopSort.cpp -o cmd_4 -std=c++11
+
+PS D:\28301\Desktop\实验2> Measure-Command { Start-Process -FilePath "cmd_4.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "outp4.txt" -NoNewWindow -Wait }
+Days              : 0
+Hours             : 0
+Minutes           : 0
+Seconds           : 1
+Milliseconds      : 70
+Ticks             : 10708068
+TotalDays         : 1.23935972222222E-05
+TotalHours        : 0.000297446333333333
+TotalMinutes      : 0.01784678
+TotalSeconds      : 1.0708068
+TotalMilliseconds : 1070.8068

@@ -1,0 +1,23 @@
+Measure-Command { Start-Process -FilePath "cmd_v0.exe" -RedirectStandardInput "1.txt" -RedirectStandardOutput "OUTPUT0.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v1.exe" -RedirectStandardInput "1.txt" -RedirectStandardOutput "OUTPUT1.txt" -NoNewWindow -Wait }
+g++ F1.cpp -o cmd_v1_c -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_v1.exe" -RedirectStandardInput "2.txt" -RedirectStandardOutput "OUTPUT2.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v1_c.exe" -RedirectStandardInput "2.txt" -RedirectStandardOutput "OUTPUT2.txt" -NoNewWindow -Wait }
+g++ F1.cpp -o cmd_v4 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_v1_d.exe" -RedirectStandardInput "2.txt" -RedirectStandardOutput "OUTPUT2_d.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v0.exe" -RedirectStandardInput "2.txt" -RedirectStandardOutput "OUTPUT0_d.txt" -NoNewWindow -Wait }
+g++ F0.cpp -o cmd_v0 -std=c++11
+g++ F-1.cpp -o cmd_v3 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_v4.exe" -RedirectStandardInput "1.txt" -RedirectStandardOutput "OUTPUT1.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v4.exe" -RedirectStandardInput "2.txt" -RedirectStandardOutput "OUTPUT2.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v3.exe" -RedirectStandardInput "2.txt" -RedirectStandardOutput "OUTPUT2.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v1_d.exe" -RedirectStandardInput "1.txt" -RedirectStandardOutput "OUTPUT1_d.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v4.exe" -RedirectStandardInput "new.txt" -RedirectStandardOutput "OUTPUTnew.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v0.exe" -RedirectStandardInput "in_merge.txt" -RedirectStandardOutput "OUTPUTmerge.txt" -NoNewWindow -Wait }
+g++ F3.cpp -o cmd_3 -std=c++11
+g++ F4.cpp -o cmd_4 -std=c++11
+g++ F5.cpp -o cmd_5 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_4.exe" -RedirectStandardInput "in_merge.txt" -RedirectStandardOutput "OUTPUTmerge.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_3.exe" -RedirectStandardInput "in_merge.txt" -RedirectStandardOutput "OUTPUTmerge.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_5.exe" -RedirectStandardInput "in_merge.txt" -RedirectStandardOutput "OUTPUTmerge.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_v4.exe" -RedirectStandardInput "in_merge.txt" -RedirectStandardOutput "OUTPUTmergenew.txt" -NoNewWindow -Wait }

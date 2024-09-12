@@ -1,0 +1,53 @@
+Measure-Command { Start-Process -FilePath "cmd_ST+inline.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "resultsST+inline.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_ST++.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "resultsST+.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_ST+.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "resultsST+.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "ST+.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "resultsST+.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_FileName.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "results.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "ST+.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "resultsST+.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "ST+release.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "resultsST+release.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "ddscanf_s.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "ddscanf_s.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "oldST.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "oldST.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_GS.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "GS34.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_dd.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "dd.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_ver5.exe" -RedirectStandardInput "17.txt" -RedirectStandardOutput "17.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_ver5.exe" -RedirectStandardInput "17.txt" -RedirectStandardOutput "output17.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_2.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "outp.txt" -NoNewWindow -Wait }
+g++ gs_latest.cpp -o cmd_ver1 -std=c++11
+g++ dd.cpp -o cmd_dd -std=c++11
+g++ ST+.cpp -o cmd_ST+ -std=c++11
+g++ ST++.cpp -o cmd_ST++ -std=c++11
+g++ ST+inline.cpp -o cmd_ST+inline -std=c++11
+g++ GS.cpp -o cmd_GS -std=c++11
+g++ gs_latest_1(4).cpp -o cmd_ver4 -std=c++11
+g++ caizihuan_luorui.cpp -o cmd_ver5 -std=c++11
+g++ GSpri.cpp -o cmd_GSpri -std=c++11
+
+g++ Filename.cpp -o cmd_5 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_5.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "outp5.txt" -NoNewWindow -Wait }
+
+
+g++ caizihuan_luorui.cpp -o cmd_2 -std=c++11
+
+
+
+Measure-Command { Start-Process -FilePath "STparallel.exe" -RedirectStandardInput "test1034.txt" -RedirectStandardOutput "1034.txt" -NoNewWindow -Wait }
+ Measure-Command { Start-Process -FilePath "STparallel.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "34.txt" -NoNewWindow -Wait }
+g++ GSpri.cpp -o cmd_GSpri -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_GSpri.exe" -RedirectStandardInput "17output.txt" -RedirectStandardOutput "17.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_GSpri.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "cmd_GSpri.txt" -NoNewWindow -Wait }
+g++ gs_latest_4.cpp -o cmd_ver4 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_ver4.exe" -RedirectStandardInput "test34.txt" -RedirectStandardOutput "cmd_ver4.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_GSpri.exe" -RedirectStandardInput "17.txt" -RedirectStandardOutput "17output.txt" -NoNewWindow -Wait }
+
+g++ 4.cpp -o cmd_4 -std=c++11
+g++ 3.cpp -o cmd_3 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_3.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "caizihuan_luoruiOUTPUT.txt" -NoNewWindow -Wait }
+g++ 5.cpp -o cmd_5 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_5.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "caizihuan_luoruiOUTPUT5.txt" -NoNewWindow -Wait }
+g++ 6.cpp -o cmd_6 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_6.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "caizihuan_luoruiOUTPUT6.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_6.exe" -RedirectStandardInput "caizihuan_luorui_1000.txt" -RedirectStandardOutput "caizihuan_luorui_1000OUTPUT6.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_3.exe" -RedirectStandardInput "caizihuan_luorui_1000.txt" -RedirectStandardOutput "caizihuan_luorui_1000OUTPUT3.txt" -NoNewWindow -Wait }
+g++ 1.cpp -o cmd_1 -std=c++11
+Measure-Command { Start-Process -FilePath "cmd_1.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "caizihuan_luoruiOUTPUT1.txt" -NoNewWindow -Wait }
+Measure-Command { Start-Process -FilePath "cmd_7.exe" -RedirectStandardInput "caizihuan_luorui.txt" -RedirectStandardOutput "caizihuan_luoruiOUTPUT7.txt" -NoNewWindow -Wait }
